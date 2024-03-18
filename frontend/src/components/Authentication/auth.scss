@@ -1,0 +1,19 @@
+@import "../css-config/mixins.scss";
+.authentication{
+
+    width: 100%;
+    height: 100vh;
+    @include md{
+        height: auto;  
+        overflow-y: auto;
+    }
+   
+ 
+    .footer-box{
+      
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+       
+    }
+}

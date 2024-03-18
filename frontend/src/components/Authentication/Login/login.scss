@@ -1,0 +1,195 @@
+@import "../../css-config/mixins.scss";
+
+.login-container {
+  width: 100%;
+  height: 87vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  @include md{
+    height: 95vh;
+  }
+  .wrapper{
+    width: 90%;
+    height: 84vh;
+    @include md{
+      height: 95vh;
+      width: 30%;
+    }
+  .heading {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+    width: 100%;
+    gap: 10px;
+    @include md{
+      display: flex;
+      height: 5%;
+      padding: 30px 0px;
+    }
+    h1 {
+      font-size: 1rem;
+    }
+  }
+  .sub-heading{
+    padding: 7px 0;
+    @include md{
+      display: none;
+    }
+    h1{
+font-size: 25px;
+    }
+  }
+  .login-form-container{
+    border: 2px solid #BDBDBD;
+    border-radius: 5px;
+    padding: 10px 15px;
+    @include md{
+      margin-top: 2rem;
+    }
+    .form-heading{
+      
+      p{
+        font-size: 16px;
+        font-weight: bold;
+        @include md{
+          font-size: 18px;
+          font-weight: normal;
+        }
+        span{
+          font-size: 14px;
+          font-weight: normal;
+          @include md{
+            display: none;
+          }
+        }
+      }
+    }
+  .form-container {
+    width: 100%;
+    height: fit-content;
+    // margin-bottom: 1rem;
+    form {
+      .info {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 1rem;
+        // padding: 20px;
+        p {
+         
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: flex-start;
+          margin-bottom: 15px;
+          label {
+        font-weight: bold;
+            left: 10px;
+            font-size: 16px;
+            letter-spacing: 1px;
+            padding-bottom: 5px;
+            @include md{
+              font-size: 12px;
+            }
+          }
+          input {
+            padding-left: 10px;
+            width: 100%;
+            border: 1px solid #B6B6B6;
+            border-radius: 5px;
+            height: 2.5rem;
+            font-family: "Roboto Mono", monospace;
+            @include md{
+              height: 2rem;
+            }
+          }
+        }
+      }
+      .btn-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        p:first-child{
+          width: 100%;
+          font-size: 13px;
+          font-weight: bold;
+          letter-spacing: 1px;
+          // text-align: justify;
+          @include md{
+            font-size: 11px;
+          }
+        }
+        p:last-child{
+          font-weight: normal;
+          font-size: 12px;
+          @include md{
+            font-size: 11px;
+          }
+        }
+        button {
+          width: 100%;
+          background: #2E0052;
+          border-radius: 5px;
+          font-size: 16px;
+          color: white;
+          height: 2.5rem;
+          border: none;
+          cursor: pointer;
+          margin: 15px 0;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+  
+}
+.bottom{
+  margin-top: 20px;
+  text-align: center;
+//   font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include md{
+    font-weight: 500;
+    margin-top: 15px;
+  }
+ img{
+    width: 30%;
+    height: 1px;
+ }
+  p{
+    width: 40%;
+  }
+  span{
+    text-decoration: underline;
+    font-weight: normal;
+  }
+}
+.btn{
+    width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        button {
+            width: 100%;
+            background: white;
+            border-radius: 5px;
+            font-size: 16px;
+            color: black;
+            border: 1px solid #BDBDBD;
+            height: 2.5rem;
+          
+            cursor: pointer;
+            margin: 15px 0;
+            font-weight: bold;
+          }
+}
+} 
+}
